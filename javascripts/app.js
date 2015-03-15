@@ -7,7 +7,7 @@ var main = function () {
 
     $.ajax ({
         // accessing Rotten Tomatoes API with using api key
-        url: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit=16&country=us&apikey=x4ctzpadpg34rzvsy9nduyt8",
+        url: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit=16&country=us&apikey=??????????????????",
         
         // the name of the callback parameter
         jsonp: "callback",
@@ -29,8 +29,14 @@ var main = function () {
               console.log( elements.title )
               console.log( elements.synopsis );
         
-              $("#result").append($("<p>").text(elements.title));
-              $("#result").append($("<p>").text(elements.mpaa_rating));
+              //$("#result").append($("<p>").text(elements.title));
+              //$("#result").append($("<p>").text(elements.mpaa_rating));
+
+              $("#result").append($("<p>").text("Title: " + elements.title 
+			                                    + ", Rated: " + elements.mpaa_rating
+												+ ", Release Date: " + elements.release_dates.theater
+												+ ", Audience Score: " + elements.ratings.audience_score));
+
 
             });
 
