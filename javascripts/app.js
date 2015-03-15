@@ -1,6 +1,6 @@
 // We had some help by Chris Danan https://github.com/chrisdanan/Test-YQL/blob/master/app.js
 // We also got some help by Mario Andrade https://github.com/Xoriam/CS473/tree/master/Assigment_4-Webpage
-// Reference: http://api.rottentomatoes.com/api/public/v1.0.json?apikey=x4ctzpadpg34rzvsy9nduyt8"
+// Reference: http://api.rottentomatoes.com/api/public/v1.0.json?apikey=XXXXXXXXXXXXXXXXXXXXXXXX"
 
 var main = function () {
 
